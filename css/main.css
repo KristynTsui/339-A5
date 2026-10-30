@@ -3,25 +3,24 @@
 /* z-index ref: https://css-tricks.com/almanac/properties/z/z-index/ */
 /* position ref: http://awdsgn.com/classes/spr12/reed/reed-wk8/pages/positioning9.html */
 
-/* Base Block Control */
-
 /* Big Block #1 [Grey] */
 .bg-grey{
-    z-index: 2;
     position: absolute;
+    z-index: 2;
 }
 
 
 /* Big block #2 [Blue] */
 .bg-blue{
-    z-index: 3;
     position: relative;
+    z-index: 3;
 }
 
 
 /* Small Block #3 [Green] */
 .bg-green{
     position: absolute;
+
     bottom:0;
     right:0;
 }
@@ -29,14 +28,14 @@
 
 /* Big Blocks #4 [Purple] */
 .bg-purple{
-    z-index: 1;
-
-    /* span amounts ref:https://www.hongkiat.com/blog/css-viewport-units-vw-vh-wmin-vmax/*/
-    width: 25vw;
-    height: 25vh;
-
     /* location on bottom right side of the window */
     position: fixed;
+    z-index: 1;
+    
     bottom: 0;
     right: 0;
+
+    /* span amounts 25% of w/h ref:https://www.hongkiat.com/blog/css-viewport-units-vw-vh-wmin-vmax/*/
+    width: 25vw;
+    height: 25vh;
 }
